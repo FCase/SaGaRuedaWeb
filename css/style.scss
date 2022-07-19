@@ -1,0 +1,297 @@
+$colorFondo: #264653;
+$colorLetrasNav_Titulos:#F4A261;
+$colorSubs:#E9C46A;
+$colorDetalles:#2A9D8F;
+$colorTextoLargo: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;;
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    
+}
+nav{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-color: rgba(42, 42, 42, 0.534);
+    border-radius: 10px;
+    .container-fluid{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0 5% 0 5% ;
+        #navbarNavDropdown{
+            height: 100%;
+            width: 50%;
+        }
+        .navbar-brand{
+            display:flex ;
+            align-items: center;
+            color: $colorTextoLargo;
+            font-size: 28px;
+            align-content: center;
+            img{
+                margin-right: 5px;
+            }
+        }
+        .dropdown-menu{
+            background-color: $colorLetrasNav_Titulos;
+        }
+    }
+    .nav-link{
+        color: $colorLetrasNav_Titulos;
+    }
+}
+.nav-link:focus, .nav-link:hover{
+    color: $colorTextoLargo;
+}
+.boxRedes{
+        background-color:rgba(42, 42, 42, 0.534) ;
+        height: 10%;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+   a{
+    color: $colorTextoLargo;
+   }
+
+
+//landing//
+#contenedorLanding{
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .col{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .subtitulo{
+            background-color: rgba(42, 42, 42, 0.534);;
+            font-weight: 400;
+            color: $colorTextoLargo;
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+    }
+    #tit_Grande .col{
+        height: 10%;
+        width: 90%;
+        display: flex;
+        
+    }
+   .col{ 
+        .contenedorTit{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .titulo{
+                    width: 30%;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 28px;
+                    color: white;
+                    letter-spacing: 3px;
+                    background-color: rgba(42, 42, 42, 0.534);
+                    border-radius: 10px;
+            }
+            h1{
+                width:70%;
+                background-color: rgba(255, 255, 255, 0.534);
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 70px;
+                text-align: center;
+                color: $colorLetrasNav_Titulos;
+                text-shadow:2px 2px gray;
+            }
+        }
+   }
+
+}
+.container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+   
+    
+}
+
+.btn-container {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg);
+
+	
+	&:nth-child(2) {
+		--btn-bg: #F4A261;
+		
+	}
+}
+
+button {
+    padding: 5px;
+	--width: 180px;
+	--height: 60px;
+	border: 0;
+	position: relative;
+	min-width: var(--width);
+	min-height: var(--height);
+	border-radius: var(--height);
+	color: #fff;
+	font-family: "Montserrat";
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 1rem;
+
+	.text,
+	.icon-container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.icon-container {
+		--icon-size: 25px;
+		position: relative;
+		width: var(--icon-size);
+		height: var(--icon-size);
+		margin-left: 15px;
+		transition: transform 500ms ease;
+
+		.icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: var(--icon-size);
+			height: var(--icon-size);
+			transition: transform 500ms ease, opacity 250ms ease;
+
+			&--left {
+				transform: translateX(-200%);
+				opacity: 0;
+			}
+
+			svg {
+				width: 100%;
+				height: 100%;
+				fill: #fff;
+                
+			}
+           
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--btn-bg);
+		border-radius: var(--height);
+		z-index: 1;
+		transition: transform 500ms ease;
+	}
+
+	&:hover {
+		&::after {
+			transform: translateX(65%);
+		}
+
+		.icon-container {
+			transform: translateX(125%);
+			.icon {
+				&--left {
+					transform: translateX(0);
+					opacity: 1;
+				}
+				&--right {
+					transform: translateX(200%);
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+a:hover{
+    color: $colorLetrasNav_Titulos;
+}
+    
+
+.contenedorPartners{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .partners{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            height: 50%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 25%;
+            }
+
+        }
+       
+        
+    }
+    
+}
+
+//Biografia//

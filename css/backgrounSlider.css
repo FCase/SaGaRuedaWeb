@@ -1,0 +1,33 @@
+#slideBg{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: sliderBg 40s linear infinite 5s;
+    animation-timing-function: ease-in-out;
+    background-image: url(../assets/imgHome/utmbscroll.png);
+}  
+
+@keyframes sliderBg{
+    0%{
+        background-image: url(../assets/imgHome/utmbscroll.png);
+    }
+    25%{
+        background-image: url(../assets/imgHome/imgScrollTres.png);
+
+    }
+    50%{
+        background-image: url(../assets/imgHome/fondoTDSscroll.png);
+    }
+    75%{
+        background-image: url(../assets/imgHome/scrollguatemala.png);
+    }
+    100%{
+        background-image: url(../assets/imgHome/sagaUtmbScroll.png);
+    }
+}
