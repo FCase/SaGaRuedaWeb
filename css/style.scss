@@ -119,18 +119,18 @@ nav{
                     width: 30%;
                     text-align: center;
                     font-weight: 400;
-                    font-size: 28px;
+                    font-size: 42px;
                     color: white;
                     letter-spacing: 3px;
                     background-color: rgba(42, 42, 42, 0.534);
                     border-radius: 10px;
             }
             h1{
-                width:70%;
+                width:40%;
                 background-color: rgba(255, 255, 255, 0.534);
                 border-radius: 10px;
                 font-weight: 600;
-                font-size: 70px;
+                font-size: 40px;
                 text-align: center;
                 color: $colorLetrasNav_Titulos;
                 text-shadow:2px 2px gray;
@@ -167,7 +167,7 @@ nav{
 	}
 }
 
-button {
+button{
     padding: 5px;
 	--width: 180px;
 	--height: 60px;
@@ -186,7 +186,17 @@ button {
 	justify-content: center;
 	align-items: center;
 	margin: 0 1rem;
-
+   a{
+    text-decoration: none;
+    padding: 5px;
+	--width: 180px;
+	--height: 60px;
+	border: 0;
+	position: relative;
+	min-width: var(--width);
+	min-height: var(--height);
+	border-radius: var(--height);
+   }
 	.text,
 	.icon-container {
 		position: relative;
@@ -277,7 +287,7 @@ a:hover{
         justify-content: center;
         a{
             height: 50%;
-            width: 30%;
+            width: 40%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -294,4 +304,191 @@ a:hover{
     
 }
 
-//Biografia//
+//SaGa Training Lab//
+
+.sectionTrainning{
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorFondo;
+    .contenedorPresentacion{
+        padding: 20px 0;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.534);
+
+        .carousel{
+            height: 100%;
+            width: 30%;
+            #carouselExampleSlidesOnly{
+                height: 100%;
+                width: 100%;
+            }
+            
+        }
+
+       p{
+            padding: 10px;
+            color: $colorTextoLargo;
+            background-color:  rgba(42, 42, 42, 0.534); 
+       }
+       .contenedorPresMedio{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+    
+            button{
+                height: 50%;
+                width: 20%;
+                padding: 10px;
+                background-color: $colorLetrasNav_Titulos;
+                align-items: center;
+              
+            }
+            button :hover{
+                background-color: $colorFondo;
+                color: $colorLetrasNav_Titulos;
+                transition: 1s;
+            }
+            .row{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+       .video{
+            width: 30%;
+            display: flex;
+            align-content: center;
+        }
+    }  
+    h2{
+        padding: 15px;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+        color: $colorLetrasNav_Titulos;
+        text-shadow:2px 2px gray;
+    }
+    h3{
+        padding-top: 15px;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: $colorTextoLargo;
+        text-shadow:2px 2px gray;
+    }
+}
+
+#contPlanes{
+    height: 30%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    .reservaPlan{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 15px;
+            font-weight:400;
+            color: $colorTextoLargo;
+        }
+        button{
+            background-color: $colorDetalles;
+            box-shadow: 2px 2px $colorSubs;
+        
+         
+        
+        }
+    }
+    .planes{
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            background-color: $colorTextoLargo;
+            border-color: $colorLetrasNav_Titulos;
+            color: $colorFondo;
+            text-shadow: 1px 1px $colorLetrasNav_Titulos ;
+           
+        } 
+        ul{
+            padding: 10px;
+            background-color: #f4a361b0;
+        }
+        button:hover{
+            color: $colorTextoLargo;
+            background-color: $colorLetrasNav_Titulos;
+            border-color: $colorLetrasNav_Titulos;
+            transition: 1s;
+        }
+    }
+}
+
+.contenedorMentorias{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 20px;
+        font-weight:400;
+        color: $colorTextoLargo;
+    }
+    .fondoMentorias{
+        height: 100%;
+        display: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.534);
+        p{
+            width: 60%;
+            margin: 5px;
+            padding: 10px;
+            background-color: rgba(42, 42, 42, 0.534);
+            border-radius: 10px;
+        }
+        .mentorias{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+           
+            .listaMentorias{
+                width: 30%;
+            }
+    
+            .contenedorImagenEJ{
+                width: 25%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .imagenEJ{
+                    height: 48%;
+                    width: 100%;
+                    img{
+                        height: 90%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

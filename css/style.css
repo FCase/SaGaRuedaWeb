@@ -111,18 +111,18 @@ a {
   width: 30%;
   text-align: center;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 42px;
   color: white;
   letter-spacing: 3px;
   background-color: rgba(42, 42, 42, 0.534);
   border-radius: 10px;
 }
 #contenedorLanding .col .contenedorTit h1 {
-  width: 70%;
+  width: 40%;
   background-color: rgba(255, 255, 255, 0.534);
   border-radius: 10px;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
   color: #F4A261;
   text-shadow: 2px 2px gray;
@@ -168,6 +168,17 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
+}
+button a {
+  text-decoration: none;
+  padding: 5px;
+  --width: 180px;
+  --height: 60px;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
 }
 button .text,
 button .icon-container {
@@ -247,7 +258,7 @@ a:hover {
 }
 .contenedorPartners .partners a {
   height: 50%;
-  width: 30%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,4 +267,179 @@ a:hover {
   height: 100%;
   width: 100%;
   border-radius: 25%;
+}
+
+.sectionTrainning {
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #264653;
+}
+.sectionTrainning .contenedorPresentacion {
+  padding: 20px 0;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.534);
+}
+.sectionTrainning .contenedorPresentacion .carousel {
+  height: 100%;
+  width: 30%;
+}
+.sectionTrainning .contenedorPresentacion .carousel #carouselExampleSlidesOnly {
+  height: 100%;
+  width: 100%;
+}
+.sectionTrainning .contenedorPresentacion p {
+  padding: 10px;
+  color: white;
+  background-color: rgba(42, 42, 42, 0.534);
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio button {
+  height: 50%;
+  width: 20%;
+  padding: 10px;
+  background-color: #F4A261;
+  align-items: center;
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio button :hover {
+  background-color: #264653;
+  color: #F4A261;
+  transition: 1s;
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio .row {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionTrainning .contenedorPresentacion .video {
+  width: 30%;
+  display: flex;
+  align-content: center;
+}
+.sectionTrainning h2 {
+  padding: 15px;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #F4A261;
+  text-shadow: 2px 2px gray;
+}
+.sectionTrainning h3 {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px gray;
+}
+
+#contPlanes {
+  height: 30%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+#contPlanes .reservaPlan {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contPlanes .reservaPlan p {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+#contPlanes .reservaPlan button {
+  background-color: #2A9D8F;
+  box-shadow: 2px 2px #E9C46A;
+}
+#contPlanes .planes {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contPlanes .planes button {
+  background-color: white;
+  border-color: #F4A261;
+  color: #264653;
+  text-shadow: 1px 1px #F4A261;
+}
+#contPlanes .planes ul {
+  padding: 10px;
+  background-color: rgba(244, 163, 97, 0.6901960784);
+}
+#contPlanes .planes button:hover {
+  color: white;
+  background-color: #F4A261;
+  border-color: #F4A261;
+  transition: 1s;
+}
+
+.contenedorMentorias {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorMentorias p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.contenedorMentorias .fondoMentorias {
+  height: 100%;
+  display: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.534);
+}
+.contenedorMentorias .fondoMentorias p {
+  width: 60%;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(42, 42, 42, 0.534);
+  border-radius: 10px;
+}
+.contenedorMentorias .fondoMentorias .mentorias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedorMentorias .fondoMentorias .mentorias .listaMentorias {
+  width: 30%;
+}
+.contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ {
+  height: 48%;
+  width: 100%;
+}
+.contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ img {
+  height: 90%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
