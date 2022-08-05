@@ -110,17 +110,20 @@ nav{
     }
    .col{ 
         .contenedorTit{
+            height: 100%;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
+          
             .titulo{
-                    width: 30%;
+                    width: 50%;
+                    
                     text-align: center;
                     font-weight: 400;
                     font-size: 42px;
-                    color: white;
+                    color: white; 
                     letter-spacing: 3px;
                     background-color: rgba(42, 42, 42, 0.534);
                     border-radius: 10px;
@@ -344,21 +347,34 @@ a:hover{
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-    
+            .imgPresentacion{
+                height: 100%;
+                width: 100%;
+            }
             button{
-                height: 50%;
-                width: 20%;
-                padding: 10px;
+                height: 30%;
+                width: 10%;
+                
                 background-color: $colorLetrasNav_Titulos;
                 align-items: center;
-              
+                border-radius: 8px;
+                
+                a{
+                    height: 30%;
+                    width: 10%;
+                    font-size: 12px;
+                }
             }
             button :hover{
-                background-color: $colorFondo;
-                color: $colorLetrasNav_Titulos;
+                background-color: $colorTextoLargo;
+                color: $colorFondo;
                 transition: 1s;
+                border-radius: 8px;
+                
             }
             .row{
+                padding-top: 5px;
+                height: 100%;
                 display: flex;
                 justify-content: space-between;
             }
@@ -443,6 +459,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid $colorTextoLargo; 
+    background-color: rgba(255, 255, 255, 0.534);
     p{
         font-size: 20px;
         font-weight:400;
@@ -454,7 +472,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.534);
+       
         p{
             width: 60%;
             margin: 5px;
@@ -490,5 +508,90 @@ a:hover{
             }
         }
     }
+    
+}
+
+// BIOGRAFIA //
+
+.sectionBio{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .contenedorBio{
+        width: 30%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
+// RESERVAA // 
+
+.sectionReserva{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/imgReserva/patagonia.jpg);
+    background-size: cover;
+
+   
+}
+
+// CONTACTO GENERAL//
+
+.contactoGen{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        width: 30%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(42, 42, 42, 0.534);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        input{
+            width: 90%;
+            height: 10%;
+
+        }
+        textarea{
+            width: 90%;
+            height: 50%;
+        }
+        h2{
+        color: $colorLetrasNav_Titulos;
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        text-shadow:2px 2px gray;
+        }
+
+        #boton{
+            width: 20%;
+            height: 10%;
+            background-color: $colorLetrasNav_Titulos;
+            border-radius: 7px;
+        
+        }
+
+
+    }
+
     
 }

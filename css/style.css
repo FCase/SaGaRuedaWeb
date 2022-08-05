@@ -101,14 +101,15 @@ a {
   display: flex;
 }
 #contenedorLanding .col .contenedorTit {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 #contenedorLanding .col .contenedorTit .titulo {
-  width: 30%;
+  width: 50%;
   text-align: center;
   font-weight: 400;
   font-size: 42px;
@@ -307,19 +308,31 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio .imgPresentacion {
+  height: 100%;
+  width: 100%;
+}
 .sectionTrainning .contenedorPresentacion .contenedorPresMedio button {
-  height: 50%;
-  width: 20%;
-  padding: 10px;
+  height: 30%;
+  width: 10%;
   background-color: #F4A261;
   align-items: center;
+  border-radius: 8px;
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio button a {
+  height: 30%;
+  width: 10%;
+  font-size: 12px;
 }
 .sectionTrainning .contenedorPresentacion .contenedorPresMedio button :hover {
-  background-color: #264653;
-  color: #F4A261;
+  background-color: white;
+  color: #264653;
   transition: 1s;
+  border-radius: 8px;
 }
 .sectionTrainning .contenedorPresentacion .contenedorPresMedio .row {
+  padding-top: 5px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -397,6 +410,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid white;
+  background-color: rgba(255, 255, 255, 0.534);
 }
 .contenedorMentorias p {
   font-size: 20px;
@@ -409,7 +424,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.534);
 }
 .contenedorMentorias .fondoMentorias p {
   width: 60%;
@@ -442,4 +456,71 @@ a:hover {
 .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ img {
   height: 90%;
   width: 100%;
+}
+
+.sectionBio {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.sectionBio .contenedorBio {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionReserva {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/imgReserva/patagonia.jpg);
+  background-size: cover;
+}
+
+.contactoGen {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactoGen form {
+  width: 30%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(42, 42, 42, 0.534);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+.contactoGen form input {
+  width: 90%;
+  height: 10%;
+}
+.contactoGen form textarea {
+  width: 90%;
+  height: 50%;
+}
+.contactoGen form h2 {
+  color: #F4A261;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+}
+.contactoGen form #boton {
+  width: 20%;
+  height: 10%;
+  background-color: #F4A261;
+  border-radius: 7px;
 }/*# sourceMappingURL=style.css.map */
