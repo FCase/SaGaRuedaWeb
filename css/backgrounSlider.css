@@ -28,6 +28,6 @@
         background-image: url(../assets/imgHome/scrollguatemala.png)
     }
     100%{
-        background-image: url(../assets/imgHome/sagaUtmbScroll.png)
+        background-image: url(../assets/imgHome/sagaUtmbScroll.png);
     }
 }
