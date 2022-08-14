@@ -422,12 +422,16 @@ a:hover{
             color: $colorTextoLargo;
         }
         button{
-            background-color: $colorDetalles;
+            background: $colorDetalles;
             box-shadow: 2px 2px $colorSubs;
         
-         
-        
         }
+        button:hover{
+            background: $colorTextoLargo;
+            color: $colorDetalles;
+            transition: 1s;
+        }
+      
     }
     .planes{
         width: 35%;
@@ -448,7 +452,7 @@ a:hover{
         button:hover{
             color: $colorTextoLargo;
             background-color: $colorLetrasNav_Titulos;
-            border-color: $colorLetrasNav_Titulos;
+            
             transition: 1s;
         }
     }
@@ -508,7 +512,16 @@ a:hover{
             }
         }
     }
+    button{
+        background: $colorDetalles;
+        box-shadow: 2px 2px $colorSubs;
     
+    }
+    button:hover{
+        background: $colorTextoLargo;
+        color: $colorDetalles;
+        transition: 1s;
+    }
 }
 
 // BIOGRAFIA //
@@ -595,3 +608,97 @@ a:hover{
 
     
 }
+
+///////// MEDIA /// 
+.sectionMediayUSS{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $colorFondo;
+
+    h2{
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+        color: $colorLetrasNav_Titulos;
+        text-shadow:2px 2px gray;
+    }
+
+    #contenedorMedia{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: rgba(42, 42, 42, 0.534);
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: solid $colorTextoLargo; 
+        #videoUno, #videoDos{
+            width: 40%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+}
+
+/////// CONTACTO ULTRA SAGA SPORT/////
+    .contenedorUSS{
+        height: 80%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: rgba(42, 42, 42, 0.534);
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: solid $colorTextoLargo; 
+        #contWebUSS{
+            height: 100%;
+            width: 65%;
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+        }
+       
+        #contTarjetaContacto{
+            height: 50%;
+            width: 30%;
+            background-color: #f4a361d4;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            h3{
+                color: $colorFondo;
+                font-weight: 400;
+                font-size: 30px;
+                text-align: center;
+                text-shadow:2px 2px gray;
+            } 
+           ul{
+                
+                li{
+                    text-align: center;
+                    background-color:  rgba(42, 42, 42, 0.534);;
+                    padding: 5px;
+                    border-radius: 7px;
+                    margin: 5px;
+                    
+                    a{
+                        text-decoration: none;
+                    }
+                }
+           } 
+              
+        }
+    }

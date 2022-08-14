@@ -379,8 +379,13 @@ a:hover {
   color: white;
 }
 #contPlanes .reservaPlan button {
-  background-color: #2A9D8F;
+  background: #2A9D8F;
   box-shadow: 2px 2px #E9C46A;
+}
+#contPlanes .reservaPlan button:hover {
+  background: white;
+  color: #2A9D8F;
+  transition: 1s;
 }
 #contPlanes .planes {
   width: 35%;
@@ -401,7 +406,6 @@ a:hover {
 #contPlanes .planes button:hover {
   color: white;
   background-color: #F4A261;
-  border-color: #F4A261;
   transition: 1s;
 }
 
@@ -456,6 +460,15 @@ a:hover {
 .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ img {
   height: 90%;
   width: 100%;
+}
+.contenedorMentorias button {
+  background: #2A9D8F;
+  box-shadow: 2px 2px #E9C46A;
+}
+.contenedorMentorias button:hover {
+  background: white;
+  color: #2A9D8F;
+  transition: 1s;
 }
 
 .sectionBio {
@@ -523,4 +536,86 @@ a:hover {
   height: 10%;
   background-color: #F4A261;
   border-radius: 7px;
+}
+
+.sectionMediayUSS {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #264653;
+}
+.sectionMediayUSS h2 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #F4A261;
+  text-shadow: 2px 2px gray;
+}
+.sectionMediayUSS #contenedorMedia {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(42, 42, 42, 0.534);
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: solid white;
+}
+.sectionMediayUSS #contenedorMedia #videoUno, .sectionMediayUSS #contenedorMedia #videoDos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorUSS {
+  height: 80%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(42, 42, 42, 0.534);
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: solid white;
+}
+.contenedorUSS #contWebUSS {
+  height: 100%;
+  width: 65%;
+}
+.contenedorUSS #contWebUSS iframe {
+  height: 100%;
+  width: 100%;
+}
+.contenedorUSS #contTarjetaContacto {
+  height: 50%;
+  width: 30%;
+  background-color: rgba(244, 163, 97, 0.831372549);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.contenedorUSS #contTarjetaContacto h3 {
+  color: #264653;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+}
+.contenedorUSS #contTarjetaContacto ul li {
+  text-align: center;
+  background-color: rgba(42, 42, 42, 0.534);
+  padding: 5px;
+  border-radius: 7px;
+  margin: 5px;
+}
+.contenedorUSS #contTarjetaContacto ul li a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

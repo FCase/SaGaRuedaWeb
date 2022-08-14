@@ -15,19 +15,19 @@
 
 @keyframes sliderBg{
     0%{
-        background-image: url(../assets/imgHome/utmbscroll.png);
+        background-image: url(../assets/imgHome/utmbscroll.png)
     }
     25%{
-        background-image: url(../assets/imgHome/imgScrollTres.png);
+        background-image: url(../assets/imgHome/imgScrollTres.png)
 
     }
     50%{
-        background-image: url(../assets/imgHome/fondoTDSscroll.png);
+        background-image: url(../assets/imgHome/fondoTDSscroll.png)
     }
     75%{
-        background-image: url(../assets/imgHome/scrollguatemala.png);
+        background-image: url(../assets/imgHome/scrollguatemala.png)
     }
     100%{
-        background-image: url(../assets/imgHome/sagaUtmbScroll.png);
+        background-image: url(../assets/imgHome/sagaUtmbScroll.png)
     }
 }
