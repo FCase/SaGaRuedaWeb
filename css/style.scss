@@ -12,7 +12,7 @@ $colorTextoLargo: white;
     font-family: 'Merriweather', serif;;
 }
 body{
-    overflow: hidden;
+    overflow: scroll;
     width: 100%;
     height: 100vh;
 }
@@ -544,16 +544,17 @@ a:hover{
 // BIOGRAFIA //
 
 .sectionBio{
-    height: 80%;
+    
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: $colorFondo;
 
     .contenedorBio{
         width: 30%;
-        height: 95%;
+        
         display: flex;
         justify-content: center;
        
@@ -905,9 +906,7 @@ a:hover{
             
 
         /// bio ///
-        .sectionBio{
-            background-color: $colorFondo;
-        }
+        
         /// contactos///
         .contenedorUSS{
             height: 90%;

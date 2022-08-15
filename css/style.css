@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: scroll;
   width: 100%;
   height: 100vh;
 }
@@ -490,16 +490,15 @@ a:hover {
 }
 
 .sectionBio {
-  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  background-color: #264653;
 }
 .sectionBio .contenedorBio {
   width: 30%;
-  height: 95%;
   display: flex;
   justify-content: center;
 }
@@ -761,9 +760,6 @@ a:hover {
   .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ {
     height: 80%;
     width: 40%;
-  }
-  .sectionBio {
-    background-color: #264653;
   }
   .contenedorUSS {
     height: 90%;
