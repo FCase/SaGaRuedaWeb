@@ -19,9 +19,6 @@ header {
 
 nav {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background-color: rgba(42, 42, 42, 0.534);
   border-radius: 10px;
 }
@@ -59,7 +56,7 @@ nav .nav-link {
 
 .boxRedes {
   background-color: rgba(42, 42, 42, 0.534);
-  height: 10%;
+  height: 10vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -495,7 +492,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: #264653;
+  background: #264653;
+  background-size: cover;
 }
 .sectionBio .contenedorBio {
   width: 30%;
