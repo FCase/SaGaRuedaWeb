@@ -63,6 +63,7 @@ nav{
     color: $colorTextoLargo;
 }
 .boxRedes{
+    
         background-color:rgba(42, 42, 42, 0.534) ;
         height: 10%;
         width: 100%;
@@ -402,7 +403,9 @@ a:hover{
         text-shadow:2px 2px gray;
     }
 }
-
+.planesTabletMobile{
+    display: none;
+}
 #contPlanes{
     height: 30%;
     width: 95%;
@@ -464,8 +467,10 @@ a:hover{
     flex-direction: column;
     align-items: center;
     border: solid $colorTextoLargo; 
-    background-color: rgba(255, 255, 255, 0.534);
+    background-color:rgba(42, 42, 42, 0.534);
     p{
+        padding: 5px;
+        text-align: justify;
         font-size: 20px;
         font-weight:400;
         color: $colorTextoLargo;
@@ -481,7 +486,8 @@ a:hover{
             width: 60%;
             margin: 5px;
             padding: 10px;
-            background-color: rgba(42, 42, 42, 0.534);
+            background-color: rgba(255, 255, 255, 0.534);
+            color: $colorFondo;
             border-radius: 10px;
         }
         .mentorias{
@@ -490,9 +496,20 @@ a:hover{
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-           
+           h5{
+            padding: 5px;
+            background:rgba(255, 255, 255, 0.534) ;
+           }
             .listaMentorias{
+                padding: 5px;
+                border: solid $colorTextoLargo;
+                border-radius: 10px;
                 width: 30%;
+
+                li{
+                    border-radius: 18px;
+                    margin: 5px;
+                }
             }
     
             .contenedorImagenEJ{
@@ -594,14 +611,22 @@ a:hover{
         text-align: center;
         text-shadow:2px 2px gray;
         }
-
-        #boton{
-            width: 20%;
+        .contBotonesForm{
+            width: 100%;
             height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .botonForm{
+            width: 30%;
+            height: 90%;
             background-color: $colorLetrasNav_Titulos;
             border-radius: 7px;
         
+            }
         }
+        
 
 
     }
@@ -619,7 +644,7 @@ a:hover{
     align-items: center;
     background: $colorFondo;
 
-    h2{
+    h5{
         font-weight: 400;
         font-size: 40px;
         text-align: center;
@@ -648,7 +673,7 @@ a:hover{
     }
 }
 
-/////// CONTACTO ULTRA SAGA SPORT/////
+    /////// CONTACTO ULTRA SAGA SPORT/////
     .contenedorUSS{
         height: 80%;
         width: 95%;
@@ -701,4 +726,225 @@ a:hover{
            } 
               
         }
+    }
+
+
+
+    ////////////////// RESPONSIVE TABLET ///////////////
+    
+    @media only screen  and (max-width: 810px)
+    {
+        /// nav ///
+         nav{
+            
+            .container-fluid{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                
+                
+                #navbarNavDropdown{
+                    width: 90%;
+                    height: 100%;
+                
+                    ul{
+                        align-items: center;
+                        
+                    }
+                    
+                }
+               
+                
+            }
+            
+            
+         }
+        
+        
+        /// landing///
+        .contenedorPartners{
+            .partners{
+                
+                a{
+                    height: 40%;
+                    width: 50%;
+                    
+                }
+            }
+        }
+        /// sagatraining lab////
+        .sectionTrainning{
+            .contenedorPresentacion{
+                
+                .carousel{
+                  display: none;  
+                }
+                .contenedorPresMedio{
+                    width: 50%;
+                    height: 100%;
+                    
+                    .row{
+                        height: 30%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-content: center;
+                        
+                        
+                    }
+                }
+                .video{
+                    width: 40%;
+                    height: 100%;
+                }
+            }
+        }
+
+        #contPlanes{
+           display: none;
+           
+        }
+        .planesTabletMobile{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            .planBasico,.planPremium{
+                padding: 5px;
+                margin: 5px;
+                width: 95%;
+                background:rgba(42, 42, 42, 0.534);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: solid $colorTextoLargo;
+                
+                ul{
+                    
+                    width: 80%;
+                    background:rgba(255, 255, 255, 0.534) ;
+                    border: solid;
+                    border-radius: 7px;
+                    padding: 5px;
+
+                }
+                b{
+                    
+                    width: 90%;
+                    background: $colorLetrasNav_Titulos;
+                    color: black;
+                    border: solid;
+                    border-radius: 7px;
+                    padding: 5px;
+                }
+            }
+            .reservaPlan{
+                margin: 5px;
+                padding: 5px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.534);
+                p{
+                    width: 80%;
+                    font-size: 15px;
+                    font-weight:400;
+                    color: $colorTextoLargo;
+                    text-shadow:1px 1px $colorDetalles;
+                    text-align: center;
+                }
+                button{
+                    background: $colorDetalles;
+                    box-shadow: 2px 2px $colorSubs;
+                
+                }
+                button:hover{
+                    background: $colorTextoLargo;
+                    color: $colorDetalles;
+                    transition: 1s;
+                }
+              
+            }
+        }
+        .contenedorMentorias{
+            .fondoMentorias{
+                
+                p{
+                    width: 80%;
+                }
+                .mentorias{
+                    flex-direction: column;
+                    
+                    .listaMentorias{
+                        margin: 10px;
+                        width: 80%;
+                    }
+
+                    .contenedorImagenEJ{
+                        width: 100%;
+                        flex-direction: row;
+                        align-items: center;
+                        .imagenEJ{
+                            height: 80%;
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+            
+
+        /// bio ///
+        .sectionBio{
+            background-color: $colorFondo;
+        }
+        /// contactos///
+        .contenedorUSS{
+            height: 90%;
+            flex-direction: column;
+           #contWebUSS{
+            height: 70%;
+            width: 95%;
+           } 
+           #contTarjetaContacto{
+            height: 20%;
+            width: 95%;
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+           }
+        }
+
+        .contactoGen{
+            form{
+                width: 60%;
+               
+            }
+        }
+        /// 
+        /// 
+        /// media ///
+        .sectionMediayUSS{
+            #contenedorMedia{
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+        
+
+
     }

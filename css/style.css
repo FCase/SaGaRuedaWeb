@@ -358,6 +358,10 @@ a:hover {
   text-shadow: 2px 2px gray;
 }
 
+.planesTabletMobile {
+  display: none;
+}
+
 #contPlanes {
   height: 30%;
   width: 95%;
@@ -415,9 +419,11 @@ a:hover {
   flex-direction: column;
   align-items: center;
   border: solid white;
-  background-color: rgba(255, 255, 255, 0.534);
+  background-color: rgba(42, 42, 42, 0.534);
 }
 .contenedorMentorias p {
+  padding: 5px;
+  text-align: justify;
   font-size: 20px;
   font-weight: 400;
   color: white;
@@ -433,7 +439,8 @@ a:hover {
   width: 60%;
   margin: 5px;
   padding: 10px;
-  background-color: rgba(42, 42, 42, 0.534);
+  background-color: rgba(255, 255, 255, 0.534);
+  color: #264653;
   border-radius: 10px;
 }
 .contenedorMentorias .fondoMentorias .mentorias {
@@ -443,8 +450,19 @@ a:hover {
   align-items: center;
   justify-content: space-around;
 }
+.contenedorMentorias .fondoMentorias .mentorias h5 {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.534);
+}
 .contenedorMentorias .fondoMentorias .mentorias .listaMentorias {
+  padding: 5px;
+  border: solid white;
+  border-radius: 10px;
   width: 30%;
+}
+.contenedorMentorias .fondoMentorias .mentorias .listaMentorias li {
+  border-radius: 18px;
+  margin: 5px;
 }
 .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ {
   width: 25%;
@@ -531,9 +549,17 @@ a:hover {
   text-align: center;
   text-shadow: 2px 2px gray;
 }
-.contactoGen form #boton {
-  width: 20%;
+.contactoGen form .contBotonesForm {
+  width: 100%;
   height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactoGen form .contBotonesForm .botonForm {
+  width: 30%;
+  height: 90%;
   background-color: #F4A261;
   border-radius: 7px;
 }
@@ -547,7 +573,7 @@ a:hover {
   align-items: center;
   background: #264653;
 }
-.sectionMediayUSS h2 {
+.sectionMediayUSS h5 {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
@@ -618,4 +644,151 @@ a:hover {
 }
 .contenedorUSS #contTarjetaContacto ul li a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 810px) {
+  nav .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav .container-fluid #navbarNavDropdown {
+    width: 90%;
+    height: 100%;
+  }
+  nav .container-fluid #navbarNavDropdown ul {
+    align-items: center;
+  }
+  .contenedorPartners .partners a {
+    height: 40%;
+    width: 50%;
+  }
+  .sectionTrainning .contenedorPresentacion .carousel {
+    display: none;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio {
+    width: 50%;
+    height: 100%;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio .row {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .sectionTrainning .contenedorPresentacion .video {
+    width: 40%;
+    height: 100%;
+  }
+  #contPlanes {
+    display: none;
+  }
+  .planesTabletMobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .planesTabletMobile .planBasico, .planesTabletMobile .planPremium {
+    padding: 5px;
+    margin: 5px;
+    width: 95%;
+    background: rgba(42, 42, 42, 0.534);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid white;
+  }
+  .planesTabletMobile .planBasico ul, .planesTabletMobile .planPremium ul {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.534);
+    border: solid;
+    border-radius: 7px;
+    padding: 5px;
+  }
+  .planesTabletMobile .planBasico b, .planesTabletMobile .planPremium b {
+    width: 90%;
+    background: #F4A261;
+    color: black;
+    border: solid;
+    border-radius: 7px;
+    padding: 5px;
+  }
+  .planesTabletMobile .reservaPlan {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.534);
+  }
+  .planesTabletMobile .reservaPlan p {
+    width: 80%;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px #2A9D8F;
+    text-align: center;
+  }
+  .planesTabletMobile .reservaPlan button {
+    background: #2A9D8F;
+    box-shadow: 2px 2px #E9C46A;
+  }
+  .planesTabletMobile .reservaPlan button:hover {
+    background: white;
+    color: #2A9D8F;
+    transition: 1s;
+  }
+  .contenedorMentorias .fondoMentorias p {
+    width: 80%;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias {
+    flex-direction: column;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .listaMentorias {
+    margin: 10px;
+    width: 80%;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ {
+    height: 80%;
+    width: 40%;
+  }
+  .sectionBio {
+    background-color: #264653;
+  }
+  .contenedorUSS {
+    height: 90%;
+    flex-direction: column;
+  }
+  .contenedorUSS #contWebUSS {
+    height: 70%;
+    width: 95%;
+  }
+  .contenedorUSS #contTarjetaContacto {
+    height: 20%;
+    width: 95%;
+  }
+  .contenedorUSS #contTarjetaContacto ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contactoGen form {
+    width: 60%;
+  }
+  .sectionMediayUSS #contenedorMedia {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=style.css.map */
