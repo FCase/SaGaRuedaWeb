@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: scroll;
+  scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
 }
@@ -39,6 +39,7 @@ nav .container-fluid .navbar-brand {
   color: white;
   font-size: 28px;
   align-content: center;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 nav .container-fluid .navbar-brand img {
   margin-right: 5px;
@@ -121,7 +122,7 @@ a {
 }
 #contenedorLanding .col .contenedorTit h1 {
   width: 40%;
-  background-color: rgba(255, 255, 255, 0.534);
+  filter: drop-shadow(2px 4px 8px #000);
   border-radius: 10px;
   font-weight: 600;
   font-size: 40px;
@@ -168,6 +169,7 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 button a {
   text-decoration: none;
@@ -263,6 +265,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 .contenedorPartners .partners a img {
   height: 100%;
@@ -494,6 +497,7 @@ a:hover {
   margin: 5px;
   display: flex;
   justify-content: center;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 
 .sectionReserva {
@@ -505,6 +509,15 @@ a:hover {
   align-items: center;
   background-image: url(../assets/imgReserva/patagonia.jpg);
   background-size: cover;
+}
+.sectionReserva .contenedorReserva {
+  height: 95%;
+  width: 100%;
+  padding: 5px;
+}
+.sectionReserva .contenedorReserva iframe {
+  height: 100%;
+  width: 100%;
 }
 
 .contactoGen {
@@ -573,6 +586,7 @@ a:hover {
   text-shadow: 2px 2px gray;
 }
 .sectionMediayUSS #contenedorMedia {
+  width: 85%;
   height: 80%;
   display: flex;
   flex-direction: row;
@@ -583,10 +597,16 @@ a:hover {
   border: solid white;
 }
 .sectionMediayUSS #contenedorMedia #videoUno, .sectionMediayUSS #contenedorMedia #videoDos {
-  width: 40%;
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.sectionMediayUSS #contenedorMedia #videoUno iframe, .sectionMediayUSS #contenedorMedia #videoDos iframe {
+  width: 100%;
+  height: 80%;
 }
 
 .contenedorUSS {
@@ -612,7 +632,7 @@ a:hover {
 .contenedorUSS #contTarjetaContacto {
   padding: 5px;
   width: 30%;
-  background-color: rgba(244, 163, 97, 0.831372549);
+  background-color: rgba(255, 255, 255, 0.534);
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -624,7 +644,7 @@ a:hover {
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  text-shadow: 2px 2px gray;
+  text-shadow: 2px 2px #F4A261;
 }
 .contenedorUSS #contTarjetaContacto ul li {
   text-align: center;
@@ -635,6 +655,7 @@ a:hover {
 }
 .contenedorUSS #contTarjetaContacto ul li a {
   text-decoration: none;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 
 @media only screen and (max-width: 900px) {
@@ -771,14 +792,33 @@ a:hover {
     align-items: center;
     justify-content: space-around;
   }
+  .sectionReserva {
+    height: 80%;
+  }
+  .sectionReserva .contenedorReserva {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+  .sectionReserva .contenedorReserva iframe {
+    height: 100%;
+    width: 100%;
+  }
   .contactoGen form {
     width: 60%;
   }
   .sectionMediayUSS #contenedorMedia {
-    width: 80%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .sectionMediayUSS #contenedorMedia #videoUno, .sectionMediayUSS #contenedorMedia #videoDos {
+    height: 50%;
+    width: 100%;
+  }
+  .sectionMediayUSS #contenedorMedia #videoUno iframe, .sectionMediayUSS #contenedorMedia #videoDos iframe {
+    width: 100%;
+    height: 80%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -921,12 +961,28 @@ a:hover {
     width: 80%;
   }
   .sectionMediayUSS #contenedorMedia {
-    height: 80%;
-    width: 80%;
-    display: flex;
+    width: 95%;
+  }
+  .sectionMediayUSS {
+    height: 130%;
+  }
+  .sectionMediayUSS .contenedorUSS {
+    height: 90%;
     flex-direction: column;
   }
-  .sectionMediayUSS #contenedorMedia #videoUno {
-    width: 100%;
+  .sectionMediayUSS .contenedorUSS #contWebUSS {
+    height: 60%;
+    width: 95%;
+  }
+  .sectionMediayUSS .contenedorUSS #contTarjetaContacto {
+    height: 35%;
+    width: 95%;
+  }
+  .sectionMediayUSS .contenedorUSS #contTarjetaContacto ul {
+    flex-direction: column;
+  }
+  .contactoGen form {
+    width: 80%;
+    height: 70%;
   }
 }/*# sourceMappingURL=style.css.map */

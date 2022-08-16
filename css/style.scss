@@ -13,9 +13,10 @@ $colorTextoLargo: white;
     list-style: none;
     text-decoration: none;
     font-family: 'Merriweather', serif;;
+    
 }
 body{
-    overflow: scroll;
+    scroll-behavior: smooth;
     width: 100%;
     height: 100vh;
 }
@@ -39,7 +40,7 @@ nav{
         align-items: center;
         padding: 0 5% 0 5% ;
 
-       
+        
         #navbarNavDropdown{
             height: 100%;
             width: 50%;
@@ -50,8 +51,11 @@ nav{
             color: $colorTextoLargo;
             font-size: 28px;
             align-content: center;
+            filter: drop-shadow(2px 4px 8px #000);
+
             img{
                 margin-right: 5px;
+                
             }
         }
         .dropdown-menu{
@@ -138,7 +142,7 @@ nav{
             }
             h1{
                 width:40%;
-                background-color: rgba(255, 255, 255, 0.534);
+                filter: drop-shadow(2px 4px 8px #000);
                 border-radius: 10px;
                 font-weight: 600;
                 font-size: 40px;
@@ -195,6 +199,7 @@ button{
 	justify-content: center;
 	align-items: center;
 	margin: 0 1rem;
+    filter: drop-shadow(2px 4px 8px #000);
    a{
     text-decoration: none;
     text-shadow:1px 1px gray;
@@ -301,6 +306,7 @@ a:hover{
             display: flex;
             align-items: center;
             justify-content: center;
+            filter: drop-shadow(2px 4px 8px #000);
             img{
                 height: 100%;
                 width: 100%;
@@ -558,7 +564,7 @@ a:hover{
         margin: 5px;
         display: flex;
         justify-content: center;
-       
+        filter: drop-shadow(2px 4px 8px #000);
     }
 }
 
@@ -573,9 +579,19 @@ a:hover{
     align-items: center;
     background-image: url(../assets/imgReserva/patagonia.jpg);
     background-size: cover;
-
+    .contenedorReserva{
+        height: 95%;
+        width: 100%;
+        padding: 5px;
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
    
 }
+
+
 
 // CONTACTO GENERAL//
 
@@ -655,7 +671,7 @@ a:hover{
     }
 
     #contenedorMedia{
-        
+        width: 85%;
         height: 80%;
         display: flex;
         flex-direction: row;
@@ -665,12 +681,17 @@ a:hover{
         border-radius: 7px;
         border: solid $colorTextoLargo; 
         #videoUno, #videoDos{
-            width: 40%;
+            height: 100%;
+            width: 50%;
             
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+            justify-content: center;
+            iframe{
+                width: 100%;
+                height: 80%;
+            }
         }
     }
 }
@@ -699,7 +720,7 @@ a:hover{
         #contTarjetaContacto{
             padding: 5px;
             width: 30%;
-            background-color: #f4a361d4;
+            background-color: rgba(255, 255, 255, 0.534);
             border-radius: 7px;
             display: flex;
             flex-direction: column;
@@ -710,7 +731,7 @@ a:hover{
                 font-weight: 400;
                 font-size: 30px;
                 text-align: center;
-                text-shadow:2px 2px gray;
+                text-shadow:2px 2px $colorLetrasNav_Titulos;
             } 
            ul{
                 
@@ -723,6 +744,7 @@ a:hover{
                     
                     a{
                         text-decoration: none;
+                        filter: drop-shadow(2px 4px 8px #000);
                     }
                 }
            } 
@@ -926,6 +948,20 @@ a:hover{
            }
         }
 
+        /// Form///
+        .sectionReserva{
+            height: 80%;
+            .contenedorReserva{
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+                iframe{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+           
+        }
         .contactoGen{
             form{
                 width: 60%;
@@ -937,10 +973,18 @@ a:hover{
         /// media ///
         .sectionMediayUSS{
             #contenedorMedia{
-                width: 80%;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: center;
+                #videoUno, #videoDos{
+                    height: 50%;
+                    width: 100%;
+                    
+                    iframe{
+                        width: 100%;
+                        height: 80%;
+                    }
+                }
             }
         }
         
@@ -1020,6 +1064,7 @@ a:hover{
                 a{
                     height: 30%;
                     width: 50%;
+                    
                 }
             }
         }
@@ -1149,17 +1194,39 @@ a:hover{
 
         ////MEDIA/// 
         
-        .sectionMediayUSS{
-           
-            #contenedorMedia{
-                height: 80%;
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                
-                #videoUno{
-                    width: 100%;
-                }
+        .sectionMediayUSS{ 
+            #contenedorMedia{  
+                width: 95%;   
             }
         }
-    }
+        /// contacto///
+        .sectionMediayUSS{
+            height: 130%;
+      
+            .contenedorUSS{
+                height: 90%;
+                flex-direction: column;
+            #contWebUSS{
+                height: 60%;
+                width: 95%;
+            } 
+            #contTarjetaContacto{
+                height: 35%;
+                width: 95%;
+                ul{
+                    flex-direction: column;
+                }
+            }
+            }
+        }
+
+        .contactoGen{
+            form{
+                width: 80%;
+                height: 70%;
+            }
+        }
+       
+    }   
+        
+        
