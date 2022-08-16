@@ -4,6 +4,9 @@ $colorSubs:#E9C46A;
 $colorDetalles:#2A9D8F;
 $colorTextoLargo: white;
 
+
+    
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +30,7 @@ nav{
     
     
     
-    background-color: rgba(42, 42, 42, 0.534);
+    background-color: rgba(42, 42, 42, 0.774);
     border-radius: 10px;
     .container-fluid{
         height: 100%;
@@ -35,6 +38,8 @@ nav{
         display: flex;
         align-items: center;
         padding: 0 5% 0 5% ;
+
+       
         #navbarNavDropdown{
             height: 100%;
             width: 50%;
@@ -55,6 +60,10 @@ nav{
     }
     .nav-link{
         color: $colorLetrasNav_Titulos;
+    }
+    .nav-item{
+        display: flex;
+        align-items: center;
     }
 }
 .nav-link:focus, .nav-link:hover{
@@ -179,8 +188,6 @@ button{
 	min-height: var(--height);
 	border-radius: var(--height);
 	color: #fff;
-	font-family: "Montserrat";
-	font-weight: bold;
 	background: rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	overflow: hidden;
@@ -190,6 +197,7 @@ button{
 	margin: 0 1rem;
    a{
     text-decoration: none;
+    text-shadow:1px 1px gray;
     padding: 5px;
 	--width: 180px;
 	--height: 60px;
@@ -288,8 +296,8 @@ a:hover{
         align-items: center;
         justify-content: center;
         a{
-            height: 50%;
-            width: 40%;
+            height: 35%;
+            width: 25%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -345,37 +353,32 @@ a:hover{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             .imgPresentacion{
-                height: 100%;
-                width: 100%;
+                width: 110%;
             }
-            button{
-                height: 30%;
-                width: 10%;
-                
-                background-color: $colorLetrasNav_Titulos;
-                align-items: center;
-                border-radius: 8px;
-                
-                a{
-                    height: 30%;
-                    width: 10%;
-                    font-size: 12px;
-                }
-            }
-            button :hover{
-                background-color: $colorTextoLargo;
-                color: $colorFondo;
-                transition: 1s;
-                border-radius: 8px;
-                
-            }
+            
+          
             .row{
                 padding-top: 5px;
-                height: 100%;
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
+                align-items: center;
+                justify-content: space-around;
+                    
+                    a{
+                        padding: 5px;
+                        
+                        width: 40%; 
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 12px;
+                        background-color: $colorFondo;
+                        border-radius: 8px;
+                    }       
+                            
+                        
+                
             }
         }
        .video{
@@ -552,7 +555,7 @@ a:hover{
     background-size: cover;
     .contenedorBio{
         width: 30%;
-        
+        margin: 5px;
         display: flex;
         justify-content: center;
        
@@ -652,7 +655,7 @@ a:hover{
     }
 
     #contenedorMedia{
-        width: 80%;
+        
         height: 80%;
         display: flex;
         flex-direction: row;
@@ -694,7 +697,7 @@ a:hover{
         }
        
         #contTarjetaContacto{
-            height: 50%;
+            padding: 5px;
             width: 30%;
             background-color: #f4a361d4;
             border-radius: 7px;
@@ -731,13 +734,12 @@ a:hover{
 
     ////////////////// RESPONSIVE TABLET ///////////////
     
-    @media only screen  and (max-width: 810px)
-    {
+    @media only screen and (max-width: 900px){
         /// nav ///
          nav{
             
             .container-fluid{
-                display: flex;
+                width: 100%;
                 flex-direction: column;
                 justify-content: center;
                 
@@ -766,9 +768,8 @@ a:hover{
             .partners{
                 
                 a{
-                    height: 40%;
-                    width: 50%;
-                    
+                    height: 35%;
+                    width: 45%;
                 }
             }
         }
@@ -936,6 +937,7 @@ a:hover{
         /// media ///
         .sectionMediayUSS{
             #contenedorMedia{
+                width: 80%;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
@@ -944,4 +946,220 @@ a:hover{
         
 
 
+    }
+
+
+    //////////////RESPONSIVE MOBILE/////////////////
+    
+    @media only screen and (max-width: 600px){
+        
+        ///landing////
+        #contenedorLanding{
+            .col{
+                .subtitulo{
+                    font-size: 15px;
+                }
+            }
+            #tit_Grande .col{
+                height: 20%;
+               
+            }
+            .col{
+
+            
+                .contenedorTit{
+                    
+                        .titulo{
+                                width: 80%;
+                                margin-top: 2px;
+                                font-size: 30px;
+                                color: white; 
+                                letter-spacing: 2px;
+
+                        }
+                        h1{
+                            width:80%;
+                            padding: 2px;
+                            font-size: 30px;
+                        }
+                }
+            }
+        }
+        button{
+            padding: 4px;
+            --width: 130px;
+            --height: 45px;
+            border: 0;
+            position: relative;
+            min-width: var(--width);
+            min-height: var(--height);
+            border-radius: var(--height);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1rem;
+           a{
+            font-size: 15px;
+            font-weight: 600;
+            text-shadow:1px 1px gray;
+            padding: 4px;
+            --width: 130px;
+            --height: 45px;
+            
+           }
+            
+        }
+      
+        .contenedorPartners{
+            .partners{
+
+                a{
+                    height: 30%;
+                    width: 50%;
+                }
+            }
+        }
+
+
+        ///Biografia///
+
+        .sectionBio{
+            flex-direction: column;
+            .contenedorBio{
+                width: 95%;
+                margin: 5px;
+               
+            }
+        }
+
+
+        ///SAGATrainingLab////
+        
+        .sectionTrainning{
+            .contenedorPresentacion{
+                flex-direction: column;
+                .carousel{
+                  display: flex;  
+                  width: 85%;
+                  height: 50%;
+                }
+                .contenedorPresMedio{
+                    width: 85%;
+
+                    .imgPresentacion{
+                       
+                        margin: 5px;
+                    }
+                    .row{
+                        height: 20%;
+                        width: 100%;
+                        
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-content: center;
+                        
+                        a{
+                            padding: 5px;
+                            height: 100%;
+                            width: 30%; 
+                            font-size: 10px;
+                        }       
+                        
+                    }
+                }
+                .video{
+                    margin-top: 10px;
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+            h2{
+                font-size: 30px;
+                text-shadow:1px 1px gray;
+            }
+            h3{
+                font-size: 20px;
+                text-shadow:1px 1px gray;
+            }
+        }
+
+        .planesTabletMobile{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            .planBasico,.planPremium{
+                b, li {
+                    font-size: 12px;
+                }
+            }
+            .reservaPlan{
+                p{
+                    font-size: 12px;
+                }
+                button{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .contenedorMentorias{
+            p{
+                font-size: 12px;
+            }
+            .fondoMentorias{
+                
+                p{
+                    font-size: 12px;
+                }
+                .mentorias{
+                    flex-direction: column;
+                    
+                    .listaMentorias{
+                        h5{
+                            font-size: 15px;
+                        }
+                        li{
+                            font-size: 10px;
+                        }
+                    }
+                    button{
+                        width: 90%;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    .contenedorImagenEJ{
+                        flex-direction: column;
+                        .imagenEJ{
+                            height: 40%;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        ////MEDIA/// 
+        
+        .sectionMediayUSS{
+           
+            #contenedorMedia{
+                height: 80%;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                
+                #videoUno{
+                    width: 100%;
+                }
+            }
+        }
     }

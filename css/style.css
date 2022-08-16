@@ -19,7 +19,7 @@ header {
 
 nav {
   width: 100%;
-  background-color: rgba(42, 42, 42, 0.534);
+  background-color: rgba(42, 42, 42, 0.774);
   border-radius: 10px;
 }
 nav .container-fluid {
@@ -48,6 +48,10 @@ nav .container-fluid .dropdown-menu {
 }
 nav .nav-link {
   color: #F4A261;
+}
+nav .nav-item {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:focus, .nav-link:hover {
@@ -157,8 +161,6 @@ button {
   min-height: var(--height);
   border-radius: var(--height);
   color: #fff;
-  font-family: "Montserrat";
-  font-weight: bold;
   background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   overflow: hidden;
@@ -169,6 +171,7 @@ button {
 }
 button a {
   text-decoration: none;
+  text-shadow: 1px 1px gray;
   padding: 5px;
   --width: 180px;
   --height: 60px;
@@ -255,8 +258,8 @@ a:hover {
   justify-content: center;
 }
 .contenedorPartners .partners a {
-  height: 50%;
-  width: 40%;
+  height: 35%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,35 +306,26 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .sectionTrainning .contenedorPresentacion .contenedorPresMedio .imgPresentacion {
-  height: 100%;
-  width: 100%;
-}
-.sectionTrainning .contenedorPresentacion .contenedorPresMedio button {
-  height: 30%;
-  width: 10%;
-  background-color: #F4A261;
-  align-items: center;
-  border-radius: 8px;
-}
-.sectionTrainning .contenedorPresentacion .contenedorPresMedio button a {
-  height: 30%;
-  width: 10%;
-  font-size: 12px;
-}
-.sectionTrainning .contenedorPresentacion .contenedorPresMedio button :hover {
-  background-color: white;
-  color: #264653;
-  transition: 1s;
-  border-radius: 8px;
+  width: 110%;
 }
 .sectionTrainning .contenedorPresentacion .contenedorPresMedio .row {
   padding-top: 5px;
-  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+.sectionTrainning .contenedorPresentacion .contenedorPresMedio .row a {
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #264653;
+  border-radius: 8px;
 }
 .sectionTrainning .contenedorPresentacion .video {
   width: 30%;
@@ -497,6 +491,7 @@ a:hover {
 }
 .sectionBio .contenedorBio {
   width: 30%;
+  margin: 5px;
   display: flex;
   justify-content: center;
 }
@@ -578,7 +573,6 @@ a:hover {
   text-shadow: 2px 2px gray;
 }
 .sectionMediayUSS #contenedorMedia {
-  width: 80%;
   height: 80%;
   display: flex;
   flex-direction: row;
@@ -616,7 +610,7 @@ a:hover {
   width: 100%;
 }
 .contenedorUSS #contTarjetaContacto {
-  height: 50%;
+  padding: 5px;
   width: 30%;
   background-color: rgba(244, 163, 97, 0.831372549);
   border-radius: 7px;
@@ -643,9 +637,9 @@ a:hover {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 900px) {
   nav .container-fluid {
-    display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
   }
@@ -657,8 +651,8 @@ a:hover {
     align-items: center;
   }
   .contenedorPartners .partners a {
-    height: 40%;
-    width: 50%;
+    height: 35%;
+    width: 45%;
   }
   .sectionTrainning .contenedorPresentacion .carousel {
     display: none;
@@ -781,8 +775,158 @@ a:hover {
     width: 60%;
   }
   .sectionMediayUSS #contenedorMedia {
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contenedorLanding .col .subtitulo {
+    font-size: 15px;
+  }
+  #contenedorLanding #tit_Grande .col {
+    height: 20%;
+  }
+  #contenedorLanding .col .contenedorTit .titulo {
+    width: 80%;
+    margin-top: 2px;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  #contenedorLanding .col .contenedorTit h1 {
+    width: 80%;
+    padding: 2px;
+    font-size: 30px;
+  }
+  button {
+    padding: 4px;
+    --width: 130px;
+    --height: 45px;
+    border: 0;
+    position: relative;
+    min-width: var(--width);
+    min-height: var(--height);
+    border-radius: var(--height);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  button a {
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px gray;
+    padding: 4px;
+    --width: 130px;
+    --height: 45px;
+  }
+  .contenedorPartners .partners a {
+    height: 30%;
+    width: 50%;
+  }
+  .sectionBio {
+    flex-direction: column;
+  }
+  .sectionBio .contenedorBio {
+    width: 95%;
+    margin: 5px;
+  }
+  .sectionTrainning .contenedorPresentacion {
+    flex-direction: column;
+  }
+  .sectionTrainning .contenedorPresentacion .carousel {
+    display: flex;
+    width: 85%;
+    height: 50%;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio {
+    width: 85%;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio .imgPresentacion {
+    margin: 5px;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio .row {
+    height: 20%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .sectionTrainning .contenedorPresentacion .contenedorPresMedio .row a {
+    padding: 5px;
+    height: 100%;
+    width: 30%;
+    font-size: 10px;
+  }
+  .sectionTrainning .contenedorPresentacion .video {
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+  }
+  .sectionTrainning h2 {
+    font-size: 30px;
+    text-shadow: 1px 1px gray;
+  }
+  .sectionTrainning h3 {
+    font-size: 20px;
+    text-shadow: 1px 1px gray;
+  }
+  .planesTabletMobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .planesTabletMobile .planBasico b, .planesTabletMobile .planBasico li, .planesTabletMobile .planPremium b, .planesTabletMobile .planPremium li {
+    font-size: 12px;
+  }
+  .planesTabletMobile .reservaPlan p {
+    font-size: 12px;
+  }
+  .planesTabletMobile .reservaPlan button {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .contenedorMentorias p {
+    font-size: 12px;
+  }
+  .contenedorMentorias .fondoMentorias p {
+    font-size: 12px;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias {
+    flex-direction: column;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .listaMentorias h5 {
+    font-size: 15px;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .listaMentorias li {
+    font-size: 10px;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias button {
+    width: 90%;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ {
+    flex-direction: column;
+  }
+  .contenedorMentorias .fondoMentorias .mentorias .contenedorImagenEJ .imagenEJ {
+    height: 40%;
+    width: 80%;
+  }
+  .sectionMediayUSS #contenedorMedia {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionMediayUSS #contenedorMedia #videoUno {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
