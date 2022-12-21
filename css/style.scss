@@ -753,6 +753,87 @@ a:hover{
     }
 
 
+    /////// PODCAST ///////
+    .sectionPodcast{
+        height: 80%;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorFondo;
+    
+        h5{
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            color: $colorTextoLargo;
+            text-shadow:2px 2px gray;
+        }
+        .contenedorPodcast{
+            height: 80%;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background: rgba(42, 42, 42, 0.534);
+            padding: 10px 20px;
+            border-radius: 7px;
+            border: solid $colorTextoLargo; 
+            .InfoPodcast{
+                width: 65%;
+                height: 100%;
+                
+                .contEpisodios{
+                    height: 65%;
+                    width: 100%;
+                    overflow: scroll;
+                        iframe{
+                            
+                            width: 100%;
+                        }
+                }
+                .contTextoInfo{
+                    width: 100%;
+                    height: 30%;
+                    margin-top: 5px;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(42, 42, 42, 0.534);
+                    border-radius: 12px;
+                    
+                    .textoInfo{
+                        height: 90%;
+                        width: 90%;
+                        text-align: center;
+                        color: $colorTextoLargo;
+                        
+                    }
+                }
+            }
+        
+            .contImgPodcast{
+                padding: 5px;
+                height: 80%;
+                width: 30%;
+                background-image: url(../assets/podcast.jpg);
+                background-size: cover;
+                ////
+                border-radius: 7px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                
+                
+            }
+        }
+    }    
+    
 
     ////////////////// RESPONSIVE TABLET ///////////////
     
@@ -989,7 +1070,49 @@ a:hover{
         }
         
 
+        ////PODCAST///
 
+        .sectionPodcast{
+            .contenedorPodcast{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+                .InfoPodcast{
+                    width: 95%;
+                    height: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-image: url(../assets/podcast.jpg);
+                    background-size: cover;
+                    .contEpisodios{
+                        height: 40%;
+                        width: 90%;
+                    }
+                    .contTextoInfo{
+                        width: 90%;
+                        height: 60%;
+                        background-color: rgba(42, 42, 42, 0.793);
+                        
+                        
+                        .textoInfo{
+                            height: 60%;
+                            width: 90%;
+                            
+                            
+                        }
+                    }
+                }
+                iframe{
+                        width: 100%;
+                        height: 80%;
+                }
+                .contImgPodcast{
+                    display: none;
+                }
+                
+            }
+        }
     }
 
 
@@ -1226,7 +1349,31 @@ a:hover{
                 height: 70%;
             }
         }
-       
+
+        ////PODCAST///
+
+        .sectionPodcast{
+            .contenedorPodcast{
+
+                .InfoPodcast{
+                    width: 95%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-image: none;
+                    
+                    .contTextoInfo{
+                        width: 90%;
+                        height: 60%;
+                        background-color: rgba(42, 42, 42, 0.793);
+                        overflow: scroll;
+                        
+                    }
+                }
+            }
+               
+        }
     }   
         
         
